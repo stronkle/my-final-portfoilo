@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="loading.css" rel="stylesheet" />
+    <title>Please Wait...</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <span>Loading</span>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        window.location.href = "home.html";
+      }, 5000);
+    </script>
+  </body>
+</html>
