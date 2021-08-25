@@ -426,88 +426,58 @@ section {
 /* end of skills section  */
 
 /* start of contact section  */
-.container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 2px 2px 20px #00000010;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background-color: #2e6f9e;
-}
-.form-group {
-  width: 100%;
-  margin-top: 20px;
-
-  font-size: 20px;
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-.form-group input,
-.form-group textarea {
+.contact-form-text {
+  display: block;
   width: 100%;
-  color: white;
-  padding: 5px;
-  background-color: #183950;
-  font-size: 18px;
-  border: 1px solid rgba(128, 128, 128, 0.199);
-  margin-top: 5px;
-}
-
-textarea {
-  resize: vertical;
-}
-button[type="submit"] {
-  width: 100%;
-  border: none;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #34495e;
+  padding: 20px 40px;
   outline: none;
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 20px;
-  font-family: "Montserrat";
-  background-color: #245980;
-  color: rgb(27, 166, 247);
-  text-align: center;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.5s ease background-color;
+  color: #71b5e9;
+  transition: 0.5s;
+  font-size: 17px;
 }
-button[type="submit"]:hover {
-  background-color: #82ccdd;
-  color: #12232e;
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
 }
-#status {
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-#status.success {
-  background-color: rgb(211, 250, 153);
-  animation: status 4s ease forwards;
-}
-#status.error {
-  background-color: rgb(250, 129, 92);
-  color: white;
-  animation: status 4s ease forwards;
-}
-@keyframes status {
-  0% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
+.contact-form-text::placeholder {
+  color: #71b5e9;
+  font-size: 17px;
 }
 
+.contact-form-text:hover {
+  letter-spacing: 0.03rem;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #eefbfb;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #2980b9;
+}
+.contact form a {
+  font-size: 17px;
+  color: #71b5e9;
+}
 /* end of contact section  */
 
 @media (max-width: 450px) {

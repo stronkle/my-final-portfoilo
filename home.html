@@ -250,38 +250,41 @@
     <!-- start of contact section  -->
 
     <section class="contact" id="contact">
-      <h1 class="section-title">Contact me</h1>
-      <div class="border"></div>
-      <div class="container">
-        <form
-          action="https://formspree.io/f/mzbykqyy"
-          method="POST"
-          id="my-form"
-        >
-          <div class="form-group">
-            <label for="firstName"> First Name</label>
-            <input type="text" id="firstName" name="firstName" />
-          </div>
-
-          <div class="form-group">
-            <label for="latsName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div class="form-group">
-            <label for="massage">Massage</label>
-            <textarea name="massage" id="massage" cols="30" rows="6"></textarea>
-          </div>
-
-          <button type="submit">Submit</button>
+      <div class="contact-section">
+        <h1 class="section-title">Contact me</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="home.html" method="post">
+          <input
+            type="text"
+            name="first_name"
+            class="contact-form-text"
+            placeholder="Your name"
+          />
+          <input
+            type="email"
+            name="email"
+            class="contact-form-text"
+            placeholder="Your email"
+          />
+          <input
+            type="number"
+            name="phone"
+            class="contact-form-text"
+            placeholder="Your phone"
+          />
+          <textarea
+            class="contact-form-text"
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+          <input
+            class="contact-form-btn"
+            type="submit"
+            name="submit"
+            value="send"
+          />
         </form>
       </div>
-      <div id="status"></div>
     </section>
     <!-- end of contact section  -->
 
