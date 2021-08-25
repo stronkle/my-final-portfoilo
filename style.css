@@ -490,4 +490,7 @@ textarea.contact-form-text {
   header .navbar a {
     font-size: 3rem;
   }
+  section {
+    overflow: hidden;
+  }
 }
