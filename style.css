@@ -487,4 +487,7 @@ textarea.contact-form-text {
   header {
     width: 100%;
   }
+  header .navbar a {
+    font-size: 3rem;
+  }
 }
