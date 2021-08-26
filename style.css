@@ -13,13 +13,31 @@
   line-height: 1.5;
 }
 
+:root {
+  --backgroundColor: linear-gradient(
+    to top,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  --navColor: linear-gradient(
+    to top,
+    rgb(32, 58, 67) 55%,
+    rgb(44, 83, 100) 150%
+  );
+  --textColor: #c0eafe;
+  --spanColor: #75d2ff;
+  --btnColor: #429fcc;
+  --hoverColor: #005280;
+}
+
 html {
   font-size: 70%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
-  background: #4da8da;
+  background: var(--backgroundColor);
   padding-left: 30rem;
 }
 
@@ -38,7 +56,7 @@ body {
 }
 header {
   position: fixed;
-  background-color: #12232e;
+  background: var(--navColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,35 +73,35 @@ header {
 header .logo {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #eefbfb;
+  color: var(--textColor);
 }
 
 header .logo span {
   text-transform: uppercase;
-  color: #4da8da;
+  color: var(--spanColor);
 }
 
 header .navbar a {
   display: block;
   font-size: 2rem;
-  color: #4da8da;
+  color: var(--textColor);
   margin: 2rem 0rem;
 }
 
 header .navbar a:hover {
   letter-spacing: 0.2rem;
-  color: #eefbfb;
+  color: var(--hoverColor);
 }
 
 header .follow a {
   font-size: 2rem;
-  color: #4da8da;
+  color: var(--textColor);
   margin: 0rem 0.5rem;
 }
 
 header .follow a:hover {
-  color: #eefbfb;
-  letter-spacing: 0.3rem;
+  color: var(--hoverColor);
+  letter-spacing: 0.1rem;
 }
 
 /* media queriess */
@@ -134,33 +152,33 @@ section {
 
 .home .content .hi {
   font-size: 4rem;
-  color: #eefbfb;
+  color: var(--textColor);
 }
 
 .home .content .greeting {
   font-size: 3rem;
-  color: #183950;
+  color: var(--textColor);
 }
 .home .content .greeting span {
   font-size: 2.5rem;
-  color: #eefbfb;
+  color: var(--spanColor);
 }
 
 .home .content .whatido {
   font-size: 3rem;
-  color: #183950;
+  color: var(--textColor);
   font-weight: 700;
 }
 
 .home .content .whatido:hover {
-  color: #0f6099;
+  color: var(--spanColor);
   transition: all 0.7s ease;
   letter-spacing: 0.2rem;
 }
 
 .home .content .text {
   font-size: 1.7rem;
-  color: #eefbfb;
+  color: var(--textColor);
   font-weight: 300;
 }
 
@@ -169,13 +187,13 @@ section {
   margin-top: 1rem;
   padding: 1rem 2rem;
   font-size: 2rem;
-  background-color: #12232e;
-  color: #4da8da;
+  background-color: var(--btnColor);
+  color: var(--textColor);
   border-radius: 20px;
 }
 .btn:hover {
-  background-color: #eefbfb;
-  color: #12232e;
+  background-color: var(--hoverColor);
+  color: var(--textColor);
   letter-spacing: 0.1rem;
 }
 
@@ -196,9 +214,9 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 2px solid #71b5e9;
+  border: 2px solid var(--spanColor);
   border-radius: 50% 35% 105% 55%;
-  box-shadow: -0.2rem 1rem rgb(25, 99, 99, 0.5);
+  box-shadow: -0.2rem 1rem var(--btnColor);
 }
 .about .first-row .about-content {
   flex: 1 1 50rem;
@@ -206,7 +224,7 @@ section {
 .about .first-row .about-content #justThis {
   font-size: 1.6rem;
   padding: 1rem 0.5rem;
-  color: #183950;
+  color: var(--textColor);
   /* 0.5 0 */
 }
 .about .first-row .about-container {
@@ -221,11 +239,11 @@ section {
 }
 
 .about .first-row .about-container .box span {
-  color: #eefbfb;
+  color: var(--spanColor);
   font-size: 1.5rem;
 }
 .about .first-row .about-container .box {
-  color: #183950;
+  color: var(--textColor);
   font-size: 1.5rem;
 }
 
@@ -242,7 +260,7 @@ section {
 }
 .dynamic-txts li {
   list-style: none;
-  color: #183950;
+  color: var(--textColor);
   font-size: 2rem;
   font-weight: 500;
   position: relative;
@@ -267,8 +285,8 @@ section {
   width: 100%;
   margin-top: 32px;
   padding: 4px;
-  background: #4da8da;
-  border-left: 2px solid #183950;
+  background: var(--navColor);
+  border-left: 2px solid var(--textColor);
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -286,14 +304,14 @@ section {
 
 .section-title {
   text-align: center;
-  color: #183950;
+  color: var(--textColor);
   text-transform: uppercase;
   font-size: 30px;
 }
 .border {
   width: 160px;
   height: 2px;
-  background: #82ccdd;
+  background: var(--spanColor);
   margin: 40px auto;
 }
 .services-container {
@@ -306,7 +324,7 @@ section {
   max-width: 33.33%;
   padding: 10px;
   text-align: center;
-  color: #ddd;
+  color: var(--textColor);
   cursor: pointer;
 }
 
@@ -315,7 +333,7 @@ section {
   width: 70px;
   height: 70px;
   border: 3px solid #82ccdd;
-  color: #82ccdd;
+  color: var(--spanColor);
   transform: rotate(45deg);
   margin-bottom: 30px;
   margin-top: 16px;
@@ -327,8 +345,8 @@ section {
   font-size: 26px;
 }
 .service-box:hover .service-icon {
-  background: #82ccdd;
-  color: #ddd;
+  background: var(--hoverColor);
+  color: var(--textColor);
 }
 .service-title {
   font-size: 18px;
@@ -375,6 +393,7 @@ section {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
+  color: var(--textColor);
   padding: 0.7rem 2rem;
 }
 .skills .second-row .my-skills .progress span {
@@ -384,13 +403,13 @@ section {
   width: 100%;
   height: 1rem;
   border-radius: 150px;
-  background-color: #71b5e9;
+  background-color: var(--textColor);
 }
 .skills .second-row .my-skills .progress .progress-bar span {
   display: block;
   height: 100%;
 
-  background-color: #183950;
+  background-color: var(--hoverColor);
 }
 
 .skills .second-row .my-skills .progress:nth-child(1) .progress-bar span {
@@ -439,10 +458,10 @@ section {
   box-sizing: border-box;
   margin: 16px 0;
   border: 0;
-  background: #34495e;
+  background: var(--navColor);
   padding: 20px 40px;
   outline: none;
-  color: #71b5e9;
+  color: var(--textColor);
   transition: 0.5s;
   font-size: 17px;
 }
@@ -450,7 +469,7 @@ section {
   box-shadow: 0 0 10px 4px #34495e;
 }
 .contact-form-text::placeholder {
-  color: #71b5e9;
+  color: var(--textColor);
   font-size: 17px;
 }
 
@@ -464,19 +483,21 @@ textarea.contact-form-text {
 .contact-form-btn {
   float: right;
   border: 0;
-  background: #34495e;
-  color: #eefbfb;
+  background: var(--navColor);
+  color: var(--textColor);
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  font-size: 1.9rem;
 }
 .contact-form-btn:hover {
-  background: #2980b9;
+  background: var(--hoverColor);
+  letter-spacing: 0.2rem;
 }
 .contact form a {
   font-size: 17px;
-  color: #71b5e9;
+  color: var(--textColor);
 }
 /* end of contact section  */
 
