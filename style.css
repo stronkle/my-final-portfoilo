@@ -94,7 +94,7 @@ header .navbar a:hover {
 }
 
 header .follow a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--textColor);
   margin: 0rem 0.5rem;
 }
@@ -361,17 +361,26 @@ section {
   .service-box {
     max-width: 45%;
   }
+  header .follow a {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .service-box {
     max-width: 50%;
   }
+  header .follow a {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .service-box {
     max-width: 100%;
+  }
+  header .follow a {
+    font-size: 3rem;
   }
 }
 
