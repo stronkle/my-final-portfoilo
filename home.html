@@ -98,7 +98,7 @@
           </div>
           <div class="about-container">
             <div class="box">
-              <p><span>age : </span> 25</p>
+              <p><span>age : </span> 26</p>
               <p><span>gender : </span> male</p>
               <p><span>languge : </span> arabic, english, kurdish</p>
               <p><span>work : </span> front-end developer</p>
@@ -253,34 +253,48 @@
       <div class="contact-section">
         <h1 class="section-title">Contact me</h1>
         <div class="border"></div>
-        <form class="contact-form" action="home.html" method="post">
+
+        <form class="contact-form" id="myform" onsubmit="return validate();">
           <input
             type="text"
-            name="first_name"
+            name="name"
+            id="name"
             class="contact-form-text"
             placeholder="Your name"
           />
           <input
+            type="text"
+            name="subject"
+            id="subject"
+            class="contact-form-text"
+            placeholder="Your Subject"
+          />
+          <input
             type="email"
             name="email"
+            id="email"
             class="contact-form-text"
             placeholder="Your email"
           />
           <input
             type="number"
-            name="phone"
+            name="number"
+            id="number"
             class="contact-form-text"
             placeholder="Your phone"
           />
           <textarea
             class="contact-form-text"
             name="message"
+            id="message"
             placeholder="Your message"
           ></textarea>
+          <div id="error_message"></div>
           <input
             class="contact-form-btn"
             type="submit"
             name="submit"
+            id="submit"
             value="send"
           />
         </form>
