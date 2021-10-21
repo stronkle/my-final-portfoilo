@@ -147,7 +147,8 @@ section {
   animation-fill-mode: forwards;
 }
 .home .myimg {
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
+  margin-right: 50px;
 }
 .home .content {
   flex: 1 1 40rem;
@@ -157,7 +158,6 @@ section {
   width: 100%;
   border-radius: 50% 50% 25% 55%;
   transform: rotate(-20deg);
-
   transition: transform 0.5s ease-in;
 }
 
@@ -495,7 +495,11 @@ section {
   padding: 0 10px;
   overflow: hidden;
 }
-
+#error_message {
+  font-size: 20px;
+  color: rgb(199, 31, 31);
+  text-align: center;
+}
 .contact-form-text {
   display: block;
   width: 100%;
